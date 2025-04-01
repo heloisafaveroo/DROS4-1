@@ -1,173 +1,197 @@
-/*corpo da página */
+
+/* Corpo da página */
 body {
-    background-color: antiquewhite; /* Define a cor de fundo */
-    margin: 0; /* Remove as margens padrão do corpo da página */
-  }
+  background-color: antiquewhite; /* Define a cor de fundo */
+  margin: 0; /* Remove as margens padrão do corpo da página */
+  
+}
+
 /* Estilos para o cabeçalho da página */
 header {
-    background-color: rgb(163, 25, 25); /* Cor de fundo  */
-    color: white; /* Cor do texto */
-    padding: 20px; /* Preenchimento interno de 20 pixels em todos os lados */
-    border-radius: 40px; /* Bordas arredondadas  */
-    font-size: 20px; /* Tamanho da fonte  */
-    text-align: left; /* Alinhamento do texto para esquerda */
-    margin: 20px; /* Margem externa de 20 pixels em todos os lados */
-    display: flex; /* permite posicionar elementos de forma flexível em linhas ou colunas.  */
-    align-items: center; /* Alinha os itens verticalmente ao centro dentro do flex container */
-  }
+  background-color: rgb(163, 25, 25); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Preenchimento interno de 20 pixels em todos os lados */
+  border-radius: 40px; /* Bordas arredondadas */
+  font-size: 20px; /* Tamanho da fonte */
+  text-align: left; /* Alinhamento do texto para esquerda */
+  margin: 20px; /* Margem externa de 20 pixels em todos os lados */
+  display: flex; /* permite posicionar elementos de forma flexível */
+  align-items: center; /* Alinha os itens verticalmente ao centro dentro do flex container */
+  
+  width: 97.5%;
+  margin: 0; /* Remover a margem */
+  position: fixed; /* Fixa o cabeçalho no topo da tela */
+  top: 0; /* Define que ficará no topo */
+  left: 0; /* Fixa à esquerda */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 
-  /* Estilos para a imagem dentro do cabeçalho */
-  header img {
-    width: 80px; /* Define a largura da imagem */
-    border-radius: 50%; /* Torna a imagem circular */
-    margin: 10px auto; /* Adiciona margem superior e inferior , e centraliza horizontalmente */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Garante que a imagem se comporte como um bloco */
-  }
-  
-  /* Estilos para o título h1 */
-  h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define  fonte */
-    margin: 0; /* Remove margens padrão */
-    font-size: 40px; /* Define o tamanho da fonte  */
-    margin-left: 20%; /* Adiciona margem esquerda */
-  }
-  
-  /* Estilos para o título h2 */
-  h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define  fonte */
-    font-size: 19px; /* Define o tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-    background-color: rgb(110, 44, 44); /*  cor de fundo */
-    color: white; /*  cor do texto  */
-    padding: 10px; /* Adiciona preenchimento interno  */
-    border-radius: 10px; /* Arredonda as bordas */
-  }
 
-  /* lista de navegação (ul) */
-  nav ul {
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o preenchimento interno */
-    display: flex; /* permite posicionar elementos de forma flexível em linhas ou colunas. */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    background-color: #333; /*   cor de fundo  */
-    padding: 15px; /* Adiciona preenchimento interno */
-    margin: 0; /* Remove as margens padrão */
-  }
-  
-  /* itens da lista de navegação (li) */
-  nav ul li {
-    margin: 0 10px; /* Adiciona margem horizontal de 10 pixels entre os itens */
-  }
-  
-  /*links da lista de navegação (a) */
-  nav ul li a {
-    color: white; /*cor do texto */
-    text-decoration: none; /* Remove a decoração de sublinhado */
-    font-size: 24px; /* Define o tamanho da fonte*/
-    padding: 10px; /* Adiciona preenchimento interno*/
-    display: block; /* Transforma o link em um elemento de bloco */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define fonte */
-  }
-  
-  /* área principal (main) */
-  main {
-    margin: auto; /* Centraliza horizontalmente o conteúdo principal */
-  }
-  
-  /*seções (section) */
-  section {
-    margin-bottom: 40px; /* Adiciona margem inferior*/
-    display: flex; /* permite posicionar elementos de forma flexível em linhas ou colunas. */
-    justify-content: space-around; /* Distribui os itens uniformemente com espaço entre eles */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
-    gap: 10px; /* Adiciona um espaçamento de 10 pixels entre os itens */
-  }
-  
-  /*artigos - item do cardápio(article) */
-  article {
-    background-color: white; /* define a cor de fundo*/
-    margin-bottom: 20px; /* Adiciona margem inferior*/
-    border-radius: 10px; /* Arredonda as bordas*/
-    padding: 12px; /* Adiciona preenchimento interno*/
-    text-align: center; /* Centraliza o texto */
-  }
-  
-  /* imagens dentro dos artigos (article img) */
-  article img {
-    width: 100%; /* Define a largura da imagem*/
-    max-width: 300px; /* Define a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 5px; /* Arredonda as bordas*/
-  }
-  
-  /*títulos h3 dentro dos artigos (article h3) */
-  article h3 {
-    margin: 10px 0; /* Adiciona margem superior e inferior de 10 pixels */
-  }
-  
-  /*parágrafos dentro dos artigos (article p) */
-  article p {
-    margin: 5px 0; /* Adiciona margem superior e inferior de 5 pixels */
-  }
-  
-  /*rodapé (footer) */
-  footer {
-    text-align: center; /* Centraliza o texto */
-    background-color: #333; /*cor de fundo*/
-    color: white; /*cor do texto*/
-    padding: 15px; /* Adiciona preenchimento interno de 15 pixels */
-  }
+}
+
+header img {
+  width: 80px; /* Define a largura da imagem */
+  border-radius: 50%; /* Torna a imagem circular */
+  margin: 10px auto; /* Adiciona margem superior e inferior, e centraliza horizontalmente */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Garante que a imagem se comporte como um bloco */
+}
+
+/* Estilos para o título h1 */
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define a fonte */
+  margin: 0; /* Remove margens padrão */
+  font-size: 40px; /* Define o tamanho da fonte */
+  margin-left: 20%; /* Adiciona margem esquerda */
+}
+
+/* Estilos para o título h2 */
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define a fonte */
+  font-size: 19px; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  background-color: rgb(110, 44, 44); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Adiciona preenchimento interno */
+  border-radius: 10px; /* Arredonda as bordas */
+}
+
+nav {
+  position: fixed;
+  top: 140px;
+  width: 100%;
+  z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
+}
+
+/* Lista de navegação (ul) */
+nav ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento interno */
+  display: flex; /* Permite posicionar elementos de forma flexível */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  background-color: #333; /* Cor de fundo */
+  padding: 15px; /* Adiciona preenchimento interno */
+  margin: 0; /* Remove as margens padrão */
+}
+
+/* Itens da lista de navegação (li) */
+nav ul li {
+  margin: 0 10px; /* Adiciona margem horizontal de 10 pixels entre os itens */
+}
+
+/* Links da lista de navegação (a) */
+nav ul li a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove a decoração de sublinhado */
+  font-size: 24px; /* Define o tamanho da fonte */
+  padding: 10px; /* Adiciona preenchimento interno */
+  display: block; /* Transforma o link em um elemento de bloco */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte */
+}
+
+/* Área principal (main) */
+main {
+  position: relative;
+  margin-top: 12%;
+  /* padding-top: calc(altura-do-cabeçalho + altura-da-barra-de-navegação); */
+  padding: 20px;
+}
+
+/* Seções (section) */
+section {
+  margin-bottom: 40px; /* Adiciona margem inferior */
+  display: flex; /* Permite posicionar elementos de forma flexível */
+  justify-content: space-around; /* Distribui os itens uniformemente com espaço entre eles */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 10px; /* Adiciona um espaçamento de 10 pixels entre os itens */
+}
+
+/* Artigos - item do cardápio (article) */
+article {
+  background-color: white; /* Define a cor de fundo */
+  margin-bottom: 20px; /* Adiciona margem inferior */
+  border-radius: 10px; /* Arredonda as bordas */
+  padding: 12px; /* Adiciona preenchimento interno */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Garante que os artigos ocupem toda a largura disponível */
+  max-width: 300px; /* Define uma largura máxima para os artigos */
+}
+
+/* Imagens dentro dos artigos (article img) */
+article img {
+  width: 100%; /* Define a largura da imagem */
+  max-width: 300px; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px; /* Arredonda as bordas */
+}
+
+/* Títulos h3 dentro dos artigos (article h3) */
+article h3 {
+  margin: 10px 0; /* Adiciona margem superior e inferior de 10 pixels */
+}
+
+/* Parágrafos dentro dos artigos (article p) */
+article p {
+  margin: 5px 0; /* Adiciona margem superior e inferior de 5 pixels */
+}
+
+/* Rodapé (footer) */
+footer {
+  text-align: center; /* Centraliza o texto */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 15px; /* Adiciona preenchimento interno de 15 pixels */
+}
+
 
 
 /* Estilos responsivos para telas com largura máxima de 768px */
 @media (max-width: 768px) {
+  /* Ajusta a margem da imagem no cabeçalho */
+  header img {
+      margin-right: 20px; /* Reduz a margem direita */
+  }
 
-    /* Ajusta a margem da imagem no cabeçalho */
-    header img {
-      margin-right: 20px; /* Reduz a margem direita  */
-    }
-  
-    /* Reduz o tamanho da fonte e ajusta a margem do título h1 */
-    h1 {
-      font-size: 23px; /* Reduz o tamanho da fonte  */
+  /* Reduz o tamanho da fonte e ajusta a margem do título h1 */
+  h1 {
+      font-size: 23px; /* Reduz o tamanho da fonte */
       margin-left: 5%; /* Reduz a margem esquerda */
-    }
-  
-    /* Mantém o tamanho da fonte do h2  */
-    h2 {
+  }
+
+  /* Mantém o tamanho da fonte do h2 */
+  h2 {
       font-size: 19px;
-    }
-  
-    /* Reduz o tamanho da fonte do h3 */
-    h3 {
+  }
+
+  /* Reduz o tamanho da fonte do h3 */
+  h3 {
       font-size: 18px; /* Reduz o tamanho da fonte */
-    }
-  
-    /* Ajusta a navegação para telas menores */
-    nav ul {
+  }
+
+  /* Ajusta a navegação para telas menores */
+  nav ul {
       align-items: center; /* Alinha os itens verticalmente ao centro */
       padding: 2px; /* Reduz o preenchimento interno */
-    }
-  
-    /* Adiciona margem inferior aos itens da lista de navegação */
-    nav ul li {
+  }
+
+  /* Adiciona margem inferior aos itens da lista de navegação */
+  nav ul li {
       margin-bottom: 10px; /* Adiciona margem inferior */
-    }
-  
-    /* Adiciona preenchimento à área principal (main) */
-    main {
+  }
+
+  /* Adiciona preenchimento à área principal (main) */
+  main {
       padding: 15px; /* Adiciona preenchimento interno */
-    }
-  
-    /* Ajusta o preenchimento e a margem dos artigos (article) */
-    article {
+  }
+
+  /* Ajusta o preenchimento e a margem dos artigos (article) */
+  article {
       margin-bottom: 20px; /* Mantém a margem inferior */
       padding: 10px; /* Reduz o preenchimento interno */
-    }
-    /* Reduz o tamanho da font dos links da navegação */
-    nav ul li a{
-        font-size: 20px;
-    }
   }
+
+  /* Reduz o tamanho da fonte dos links da navegação */
+  nav ul li a {
+      font-size: 20px;
+  }
+}
